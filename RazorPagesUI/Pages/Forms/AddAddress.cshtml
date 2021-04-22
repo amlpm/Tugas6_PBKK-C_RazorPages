@@ -1,0 +1,20 @@
+﻿@page
+@model RazorPagesUI.AddAddressModel
+@{
+    ViewData["Title"] = "Tambah Alamat!";
+}
+
+<h1>Tambah Alamat!</h1>
+<br />
+
+<form method="post">
+    <label> Alamat Lengkap : </label><br />
+    <input type="text" asp-for="Address.StreetAddress" placeholder="Alamat Lengkap" /><br /><br />
+    <label> Kota Tempat Tinggal :</label><br />
+    <input type="text" asp-for="Address.City" placeholder="Kota" /><br /><br />
+    <label> Negara Tempat Tinggal : </label><br />
+    <input type="text" asp-for="Address.State" placeholder="Negara" /><br /><br />
+    <label> Kode Pos :</label><br />
+    <input type="text" asp-for="Address.ZipCode" placeholder="Kode Pos" /><br /><br />
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>

@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+
+    <header class="jumbotron" style="background-color: #c5a3ff; font-family: Verdana, Geneva, Tahoma, sans-serif; color: white">
+
+        <h1 class="display-4 welcomeMessage">Selamat Datang di  @Model.City!</h1>
+        <p class="lead">
+            Kami tim yang terdiri dari Evelyn dan Amelia dengan NRP 147 dan 99 dari kelas PBKK C sedang mengimplementasikan Core Razor Pages. <br /><br /> Berikut adalah referensi dari kami
+            <a href="https://www.youtube.com/watch?v=68towqYcQlY"> Intro to ASP.NET Core Razor Pages </a> <br />
+            dan berikut adalah link dari github kami
+            <a href="https://github.com/dotnet-presentations/aspnetcore-for-beginners"> Tugas Minggu 6 PBKK </a>
+        </p>
+        <a href="/Forms/AddAddress" class="btn btn-primary btn-lg" style="border: none; background: #FFDFD3; box-shadow: 2px 2px 5px 1px #666; color: black;">Let's Go!</a>
+    </header>
+
